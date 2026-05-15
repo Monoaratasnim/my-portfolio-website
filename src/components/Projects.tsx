@@ -8,7 +8,7 @@ const projects = [
     title: "SkillSphere - Learning Platform",
     desc: "A comprehensive platform for online education with interactive courses and progress tracking.",
     image: "/projects/online-learning.png",
-    tags: ["React", "Next.js, Authentication"],
+    tags: ["React", "Next.js", "Authentication"],
     link: "https://b13-a08-seven.vercel.app/",
     colSpan: "md:col-span-8",
   },
