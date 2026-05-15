@@ -8,7 +8,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Neeha Hossain | Web Developer & UI Designer",
+  title: "Monoara Tasnim | Web Developer & UI Designer",
   description: "Professional Web Developer & UI Designer portfolio",
 };
 
