@@ -59,8 +59,8 @@ export default function Hero() {
             Start a Project
           </motion.a>
           <a
-            href="/neeha-resume.pdf"
-            download="Neeha_Resume.pdf"
+            href="/monoara-resume.pdf"
+            download="Monoara_Resume.pdf"
             className="group flex items-center gap-2 border-2 border-slate-200 text-slate-700 px-10 py-5 rounded-2xl font-bold transition-all hover:border-primary hover:text-primary hover:scale-105"
           >
             Download CV
