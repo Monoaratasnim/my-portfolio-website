@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex gap-8">
           {[
             { name: "LinkedIn", icon: "share", href: "https://www.linkedin.com/in/tasnim-monoara" },
-            { name: "GitHub", icon: "terminal", href: "https://github.com/neehahossain" },
+            { name: "GitHub", icon: "terminal", href: "https://github.com/Monoaratasnim" },
             { name: "Twitter", icon: "share", href: "#" },
           ].map((social) => (
             <a
