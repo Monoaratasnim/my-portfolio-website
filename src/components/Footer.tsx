@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <div className="flex gap-8">
           {[
-            { name: "LinkedIn", icon: "share", href: "https://www.linkedin.com/in/neeha-hossain" },
+            { name: "LinkedIn", icon: "share", href: "https://www.linkedin.com/in/tasnim-monoara" },
             { name: "GitHub", icon: "terminal", href: "https://github.com/neehahossain" },
             { name: "Twitter", icon: "share", href: "#" },
           ].map((social) => (
