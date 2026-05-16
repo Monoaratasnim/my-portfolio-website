@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="py-12 px-6 border-t border-slate-100">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="text-center md:text-left">
-          <div className="text-xl font-extrabold text-primary mb-2">Neeha<span className="text-slate-400">Hossain</span></div>
+          <div className="text-xl font-extrabold text-primary mb-2">Monoara<span className="text-slate-400">Tasnim</span></div>
           <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400">
-            © 2024 • Crafted with passion and precision
+            © 2026 • Crafted with passion and precision
           </p>
         </div>
         <div className="flex gap-8">
