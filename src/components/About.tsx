@@ -47,9 +47,9 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-24 md:py-40 overflow-hidden">
+    <section id="about" ref={sectionRef} className="py-16 md:py-40 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-24 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
           <div ref={mockupRef} className="relative group">
             <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] -z-10 group-hover:bg-primary/10 transition-colors" />
             <div className="laptop-mockup shadow-level-2">
@@ -64,7 +64,7 @@ export default function About() {
             <div className="laptop-base"></div>
           </div>
 
-          <div ref={contentRef}>
+          <div ref={contentRef} className="text-center md:text-left">
             <motion.span 
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -72,26 +72,26 @@ export default function About() {
             >
               My Story
             </motion.span>
-            <h3 className="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">Designing for the <span className="text-primary">Future</span></h3>
-            <p className="text-lg text-slate-500 mb-10 leading-relaxed">
+            <h3 className="text-3xl md:text-5xl font-extrabold mb-6 md:mb-8 leading-tight">Designing for the <span className="text-primary">Future</span></h3>
+            <p className="text-base md:text-lg text-slate-500 mb-8 md:mb-10 leading-relaxed">
               I am a passionate web developer and a proud graduate of <strong>Chittagong Independent University</strong>.
               My journey started with a fascination for how code can transform ideas into interactive digital experiences,
               and I am dedicated to building responsive and scalable web applications.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
               {services.map((service, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(0,0,0,0.05)" }}
-                  className="bg-white p-8 rounded-3xl border border-slate-100 transition-all cursor-default text-center"
+                  className="bg-white p-4 md:p-8 rounded-2xl md:rounded-3xl border border-slate-100 transition-all cursor-default text-center"
                 >
-                  <div className="w-12 h-12 bg-primary/5 rounded-2xl flex items-center justify-center mx-auto mb-4 text-primary">
-                    <span className="material-symbols-outlined text-2xl">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/5 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-4 text-primary">
+                    <span className="material-symbols-outlined text-xl md:text-2xl">
                       {service.icon}
                     </span>
                   </div>
-                  <h4 className="font-bold text-sm text-slate-900">{service.title}</h4>
-                  <p className="text-[10px] text-slate-400 uppercase tracking-wider mt-2">{service.desc}</p>
+                  <h4 className="font-bold text-xs md:text-sm text-slate-900">{service.title}</h4>
+                  <p className="text-[8px] md:text-[10px] text-slate-400 uppercase tracking-wider mt-1 md:mt-2">{service.desc}</p>
                 </motion.div>
               ))}
             </div>

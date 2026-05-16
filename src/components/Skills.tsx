@@ -42,18 +42,18 @@ const itemVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 md:py-40 bg-slate-50/50">
+    <section id="skills" className="py-16 md:py-40 bg-slate-50/50">
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl font-extrabold mb-6"
+            className="text-4xl md:text-6xl font-extrabold mb-4 md:mb-6"
           >
             Core <span className="text-primary italic">Stack</span>
           </motion.h2>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto">
             The modern technologies I use to bring complex ideas to life with performance and scalability.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8"
         >
           {skills.map((skill, index) => (
             <motion.div
@@ -74,15 +74,15 @@ export default function Skills() {
                 backgroundColor: "#ffffff",
                 boxShadow: "0 20px 40px rgba(0,0,0,0.05)"
               }}
-              className="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] transition-all text-center group border border-slate-200/50 cursor-default"
+              className="bg-white/50 backdrop-blur-sm p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] transition-all text-center group border border-slate-200/50 cursor-default"
             >
-              <div className="w-20 h-20 bg-slate-100 rounded-[2rem] flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                <span className="material-symbols-outlined text-4xl transition-transform group-hover:scale-110">
+              <div className="w-12 h-12 md:w-20 md:h-20 bg-slate-100 rounded-xl md:rounded-[2rem] flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                <span className="material-symbols-outlined text-2xl md:text-4xl transition-transform group-hover:scale-110">
                   {skill.icon}
                 </span>
               </div>
-              <h4 className="text-xl font-bold text-slate-900">{skill.name}</h4>
-              <div className="w-8 h-1 bg-primary/20 mx-auto mt-4 rounded-full group-hover:w-16 group-hover:bg-primary transition-all duration-500" />
+              <h4 className="text-sm md:text-xl font-bold text-slate-900">{skill.name}</h4>
+              <div className="w-6 md:w-8 h-0.5 md:h-1 bg-primary/20 mx-auto mt-2 md:mt-4 rounded-full group-hover:w-12 md:group-hover:w-16 group-hover:bg-primary transition-all duration-500" />
             </motion.div>
           ))}
         </motion.div>

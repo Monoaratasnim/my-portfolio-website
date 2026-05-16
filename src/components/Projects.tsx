@@ -41,28 +41,28 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-40">
+    <section id="projects" className="py-16 md:py-40">
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 md:mb-16 gap-6 text-center md:text-left">
           <div className="max-w-xl">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl md:text-6xl font-extrabold mb-6"
+              className="text-4xl md:text-6xl font-extrabold mb-4 md:mb-6"
             >
               Selected <span className="text-primary italic">Works</span>
             </motion.h2>
-            <p className="text-lg text-slate-500 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-500 leading-relaxed">
               A curated selection of projects where I've combined design and development to solve real-world problems.
             </p>
           </div>
-          <div className="w-24 h-24 bg-primary/5 rounded-full flex items-center justify-center border border-primary/10">
-            <span className="material-symbols-outlined text-primary text-4xl animate-bounce">south</span>
+          <div className="w-16 h-16 md:w-24 md:h-24 bg-primary/5 rounded-full flex items-center justify-center border border-primary/10">
+            <span className="material-symbols-outlined text-primary text-2xl md:text-4xl animate-bounce">south</span>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -70,11 +70,11 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`${project.colSpan} group relative bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 ${
+              className={`${project.colSpan} group relative bg-white rounded-3xl md:rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 ${
                 project.isLarge ? "flex flex-col md:flex-row" : ""
               }`}
             >
-              <div className={`${project.isLarge ? "md:w-1/2 h-full min-h-[500px]" : "h-[450px]"} overflow-hidden relative bg-white p-6 flex items-center justify-center`}>
+              <div className={`${project.isLarge ? "md:w-1/2 h-full min-h-[300px] md:min-h-[500px]" : "h-[300px] md:h-[450px]"} overflow-hidden relative bg-white p-4 md:p-6 flex items-center justify-center`}>
                 <motion.img
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -85,17 +85,17 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-primary/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
               
-              <div className={`${project.isLarge ? "md:w-1/2 p-10 md:p-16" : "p-10"} flex flex-col justify-between`}>
+              <div className={`${project.isLarge ? "md:w-1/2 p-6 md:p-16" : "p-6 md:p-10"} flex flex-col justify-between`}>
                 <div>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="bg-slate-100 text-slate-600 text-[10px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full border border-slate-200/50">
+                      <span key={tag} className="bg-slate-100 text-slate-600 text-[8px] md:text-[10px] uppercase tracking-widest font-bold px-3 md:px-4 py-1 md:py-1.5 rounded-full border border-slate-200/50">
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-3xl font-bold mb-4 text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
-                  <p className="text-slate-500 leading-relaxed mb-8">
+                  <h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4 text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
+                  <p className="text-sm md:text-slate-500 leading-relaxed mb-6 md:mb-8 text-slate-500">
                     {project.desc}
                   </p>
                 </div>
@@ -103,11 +103,11 @@ export default function Projects() {
                 <Link 
                   href={project.link || "#"} 
                   target="_blank"
-                  className="inline-flex items-center gap-3 font-bold text-primary group/link"
+                  className="inline-flex items-center gap-3 font-bold text-primary group/link text-sm md:text-base"
                 >
                   View Project
-                  <span className="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
-                    <span className="material-symbols-outlined text-xl">arrow_outward</span>
+                  <span className="w-8 h-8 md:w-10 md:h-10 bg-primary/5 rounded-full flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white transition-all">
+                    <span className="material-symbols-outlined text-lg md:text-xl">arrow_outward</span>
                   </span>
                 </Link>
               </div>
