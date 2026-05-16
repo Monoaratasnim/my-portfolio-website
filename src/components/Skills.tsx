@@ -3,11 +3,21 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "MongoDB", icon: "database" },
+  { name: "HTML5", icon: "html" },
+  { name: "CSS3", icon: "css" },
+  { name: "JavaScript", icon: "javascript" },
+  { name: "React.js", icon: "code" },
   { name: "Next.js", icon: "rocket_launch" },
+  { name: "Node.js", icon: "dns" },
   { name: "Express.js", icon: "terminal" },
-  { name: "Tailwind", icon: "style" },
+  { name: "MongoDB", icon: "database" },
+  { name: "Tailwind CSS", icon: "style" },
+  { name: "Git", icon: "source" },
+  { name: "GitHub", icon: "hub" },
+  { name: "REST API", icon: "api" },
+  { name: "Responsive Design", icon: "devices" },
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
