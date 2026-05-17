@@ -123,7 +123,7 @@ export default function Hero() {
               }}
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv4a2OsBYgVsJps14A0sUMEysEw0Dpbb4J92kQ-Os0n1TA6WUpvAMqYDBQUAHnhdgAx2esWV7zw7YYxH6XsPWt882uXdqH6FIRVlBenPqReoFEUYulGzG3oCCgFxYHFXNpnjmuAU5f2Cm80fPKdTEtm2_dmH575G4FOVm6VhBcCG4try-tfRV3ruhGznGgFJc4kHx3GJhccKigCv6OpMN3TD7Xq20AigNY5ph8kAhU2JbosEQfVVzJYCoX9YYia65w13XdBhGdOpg"
               alt="Monoara Tasnim"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top translate-y-2"
             />
           </div>
         </motion.div>
